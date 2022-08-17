@@ -2,14 +2,13 @@ package com.idat.EFERICKMARQUEZCLIENTE.model;
 
 import lombok.Data;
 
-
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "cliente_pizza")
+@Table(name = "clientePizza")
 public class ClienteDetalle {
 
     @EmbeddedId

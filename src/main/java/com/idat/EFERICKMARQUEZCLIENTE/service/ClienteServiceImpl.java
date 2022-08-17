@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ClienteServiceImpl {
+public class ClienteServiceImpl implements ClienteService{
 
     @Autowired
     private ClienteRepository repository;
@@ -30,7 +30,7 @@ public class ClienteServiceImpl {
     }
 
     @Override
-    public Cliente porId(Integer idCliente) {
+    public Cliente listarPorId(Integer idCliente) {
         return repository.findById(idCliente).orElse(null);
     }
 
@@ -66,3 +66,4 @@ public class ClienteServiceImpl {
         }
     }
 }
+

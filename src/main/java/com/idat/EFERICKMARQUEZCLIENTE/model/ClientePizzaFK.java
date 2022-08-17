@@ -10,6 +10,7 @@ import java.io.Serializable;
 @Embeddable
 public class ClientePizzaFK implements Serializable {
 
+
     @Column(name = "idCliente", nullable = false, unique = false)
     private Integer idCliente;
 
